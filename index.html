@@ -138,11 +138,11 @@
     </div>
 </div>
 
-<button class="btn-2">Proceed to Next</button>
+<button class="btn-2" onclick="openModel()">Proceed to Next</button>
 
-<div class="overlay">
+<div class="overlay" id="overlay">
     <div class="modal">
-      <img src="close.png" class="close-icon"/>
+      <img src="close.png" class="close-icon" onclick="closeModel()"/>
         <form class="form">
 
         <h2>Buy Now</h2>
@@ -170,13 +170,20 @@
             placeholder="Enter your city"
             class="form-input"
             />
+
+            <input
+            type="=text"
+            placeholder="Enter your Car Name"
+            class="form-input"
+            />
         </form>
         <div>
-            <button type="button" class="btn-2">Buy Now</button>
+            <button type="button" class="btn-2">Procced to Pay Amount</button>
             
         </div>
     </div>
 </div>
     
+<script src="./JS/script.js"></script>
 </body>
 </html>
